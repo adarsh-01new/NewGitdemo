@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Loans" parallel="tests" thread-count="5">
+	
+	<listeners>
+		<listener class-name="TestngPractice.Listenersrestudy"></listener>
+	</listeners>
+	<parameter name="URL" value="www.dummysite.com"></parameter>
+	<test thread-count="5" name="Loan">
+		<classes>
+			<class name="TestngPractice.Restudyone">
+			</class>
+			<class name="TestngPractice.RestdThree"></class>
+		</classes>
+	</test>
+
+
+	<test name="colour" parallel="classes" thread-count="2">
+		<parameter name="URL" value="www.newdumysite.com"/>
+		<classes>
+			<class name="TestngPractice.RestdyTwo" />
+		</classes>
+
+	</test>
+
+</suite> <!--
+Suite -->

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Loans">
+	<test thread-count="5" name="Loan">
+		<groups>
+			<run>
+				<include name="sanity"></include>
+			</run>
+		</groups>
+		<classes>
+			<class name="TestngPractice.Restudyone">
+			</class>
+			<class name="TestngPractice.RestdThree"></class>
+		</classes>
+	</test>
+
+
+	<test name="colours">
+		<groups>
+			<run>
+				<include name="sanity"></include>
+			</run>
+		</groups>
+		<classes>
+			<class name="TestngPractice.RestdyTwo" />
+		</classes>
+
+	</test>
+
+</suite> <!--
+Suite -->

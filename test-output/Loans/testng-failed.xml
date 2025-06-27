@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Loans]" guice-stage="DEVELOPMENT">
+  <parameter name="URL" value="www.dummysite.com"/>
+  <listeners>
+    <listener class-name="TestngPractice.Listenersrestudy"/>
+  </listeners>
+  <test thread-count="5" parallel="tests" name="Loan(failed)">
+    <classes>
+      <class name="TestngPractice.RestdThree">
+        <methods>
+          <include name="Debitcard"/>
+          <include name="am"/>
+          <include name="Fuelcard"/>
+          <include name="af"/>
+          <include name="failuretest"/>
+          <include name="bt"/>
+        </methods>
+      </class> <!-- TestngPractice.RestdThree -->
+    </classes>
+  </test> <!-- Loan(failed) -->
+</suite> <!-- Failed suite [Loans] -->
