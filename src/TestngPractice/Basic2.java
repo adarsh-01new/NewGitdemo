@@ -16,6 +16,7 @@ public class Basic2 {
 	@BeforeSuite
 	public void zfsuite() {
 		System.out.println("i will execute before suite");
+		System.out.println("new update");
 	}
 	@Test
 	public void dummy()
